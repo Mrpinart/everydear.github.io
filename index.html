@@ -12,7 +12,7 @@
       --bg: #f5f7fa;
       --text: #333;
     }
-    * { margin:0; padding:0; box-sizing:border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
@@ -31,33 +31,16 @@
       color: var(--primary);
       text-decoration: none;
     }
-    .hero {
-      background: linear-gradient(135deg, var(--accent), var(--primary));
-      color: #fff;
-      text-align: center;
-      padding: 100px 20px;
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-    .hero a {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #fff;
-      color: var(--accent);
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .hero a:hover {
-      background: #f1f1f1;
+    .section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     .form-section {
       padding: 60px 20px;
@@ -83,21 +66,33 @@
       font-size: 0.9rem;
       color: #777;
     }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <a href="#" class="logo">에브리디어</a>
   </header>
-  <section class="hero">
-    <h1>간편한 효도 루틴화 서비스</h1>
-    <p>바쁜 일상에도 소중한 마음 전하기, 에브리디어가 함께합니다.</p>
-    <a href="#form">지금 바로 신청하기</a>
+
+  <!-- Section 1: First image -->
+  <section class="section">
+    <img src="https://github.com/user-attachments/assets/a41e1b56-9e98-4037-91d9-1c06dfb2bb97" alt="서비스 페이지 이미지 1">
   </section>
+
+  <!-- Section 2: Second image -->
+  <section class="section">
+    <img src="https://github.com/user-attachments/assets/b61ac983-60b2-4c7c-826f-a0fc1e5535a7" alt="서비스 소개 문구 이미지 2">
+  </section>
+
+  <!-- Section 3: Embedded Netlify Form -->
   <section id="form" class="form-section">
     <h2>▼첫 회 무료 신청하기▼</h2>
     <iframe src="everydear_netlify_complete_fixed.html"></iframe>
   </section>
+
   <footer>
     &copy; 2025 에브리디어 | Contact: <a href="mailto:gwg03017@naver.com">gwg03017@naver.com</a>
   </footer>
